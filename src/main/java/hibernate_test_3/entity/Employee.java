@@ -1,6 +1,6 @@
 package hibernate_test_3.entity;
 
-import hibernate_test_2.entity.Detail;
+import hibernate_test_3.entity.Detail;
 import jakarta.persistence.*;
 
 @Entity
@@ -26,7 +26,7 @@ public class Employee {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "details_id")
-    private hibernate_test_2.entity.Detail empDetail;
+    private hibernate_test_3.entity.Detail empDetail;
 
     public Employee(){
         //
@@ -90,7 +90,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public hibernate_test_2.entity.Detail getEmpDetail() {
+    public hibernate_test_3.entity.Detail getEmpDetail() {
         return empDetail;
     }
 

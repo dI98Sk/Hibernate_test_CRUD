@@ -1,6 +1,6 @@
 package hibernate_test_3.entity;
 
-import hibernate_test_2.entity.Employee;
+
 import jakarta.persistence.*;
 
 @Entity
